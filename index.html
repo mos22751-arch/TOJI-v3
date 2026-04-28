@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOJI | Mohamed Mostafa</title>
+    <meta name="description" content="Portfolio of Mohamed Mostafa - Digital Architect & UI Specialist">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="dark">
+
+<div class="liquid-bg">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+</div>
+
+<div id="cyber-core">
+    <div class="ring ring-1"></div>
+    <div class="ring ring-2"></div>
+    <div class="core-glow"></div>
+</div>
+
+<nav class="navbar glass">
+    <div class="nav-left">
+        <span id="nav-time">00:00</span>
+        <span class="separator">|</span>
+        <span id="nav-weather">26°C</span>
+    </div>
+    
+    <span class="brand">TOJI</span>
+    
+    <div class="nav-right">
+        <div class="theme-toggle-wrapper" onclick="toggleTheme()">
+            <div class="toggle-track">
+                <div class="toggle-thumb">
+                    <i data-lucide="sun" class="sun-icon"></i>
+                    <i data-lucide="moon" class="moon-icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main class="scroll-container">
+    
+    <section class="page" id="hero">
+        <div class="glass hero-box reveal tilt">
+            <h1 class="glitch-text">TOJI</h1>
+            <p class="subtitle">Mohamed Mostafa • Digital Architect</p>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </section>
+
+    <section class="page" id="about">
+        <div class="glass content-box reveal tilt">
+            <h2 class="title">About</h2>
+            <div class="text-wrapper">
+                <p class="bio-text">
+                    Creating digital experiences that blend logic with aesthetics. 
+                    Focused on UI systems, interactive development, and <strong>building strength at the Gym</strong>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="page" id="skills">
+        <div class="glass content-box reveal">
+            <h2 class="title">Technical & Physical Core</h2>
+            <div class="skills-grid">
+                <div class="skill-tile tilt"><i data-lucide="terminal"></i><span>Dev</span></div>
+                <div class="skill-tile tilt"><i data-lucide="code-2"></i><span>UI</span></div>
+                <div class="skill-tile tilt"><i data-lucide="dumbbell"></i><span>Gym</span></div>
+                <div class="skill-tile tilt"><i data-lucide="zap"></i><span>Logic</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page" id="links">
+        <div class="links-wrapper reveal">
+            <h2 class="title white" style="text-align: center; margin-bottom: 30px;">Connect</h2>
+            <div class="social-grid-large">
+                <a target="_blank" href="https://instagram.com/mouhamedmostafffa" class="social-card tilt insta">
+                    <i data-lucide="instagram"></i><span>Instagram</span>
+                </a>
+                <a target="_blank" href="https://tiktok.com/@mouhamedmostafffa" class="social-card tilt tiktok">
+                    <i data-lucide="video"></i><span>TikTok</span>
+                </a>
+                <a target="_blank" href="https://www.snapchat.com/add/dr.toji" class="social-card tilt snap">
+                    <i data-lucide="ghost"></i><span>Snapchat</span>
+                </a>
+                <a target="_blank" href="https://threads.com" class="social-card tilt threads">
+                    <i data-lucide="at-sign"></i><span>Threads</span>
+                </a>
+                <a target="_blank" href="https://wa.me/201102550730" class="social-card tilt whatsapp">
+                    <i data-lucide="message-circle"></i><span>WhatsApp</span>
+                </a>
+                <a target="_blank" href="#" class="social-card tilt spotify">
+                    <i data-lucide="music"></i><span>Spotify</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<div class="dock-container">
+    <div class="dock glass">
+        <div class="dock-item" onclick="scrollToPage('hero')" data-section="hero"><i data-lucide="home"></i></div>
+        <div class="dock-item" onclick="scrollToPage('about')" data-section="about"><i data-lucide="user"></i></div>
+        <div class="dock-item" onclick="scrollToPage('skills')" data-section="skills"><i data-lucide="cpu"></i></div>
+        <div class="dock-item" onclick="scrollToPage('links')" data-section="links"><i data-lucide="link"></i></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<script>lucide.createIcons();</script>
+</body>
+</html>
